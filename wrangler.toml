@@ -1,6 +1,7 @@
 name = "memos-worker"
 compatibility_date = "2025-08-19"
 main = "src/index.js"
+
 [assets]
 directory = "./src/public"
 run_worker_first = [
@@ -9,15 +10,15 @@ run_worker_first = [
 
 [[d1_databases]]
 binding = "DB"
-database_id = "YOUR_D1_DATABASE_ID"
-database_name = "YOUR_D1_DATABASE_NAME"
+database_name = "notes-db"
+database_id = "7e469857-1362-4884-a5c8-c6ac25389baf"
 
 [[kv_namespaces]]
 binding = "NOTES_KV"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "4c1a2be8f4284aa8bd3033a26f43b15e"
 preview_id = ""
 
 [[r2_buckets]]
 binding = "NOTES_R2_BUCKET"
-bucket_name = "YOUR_R2_BUCKET_NAME"
+bucket_name = "my-memos-storage"
 preview_bucket_name = "notes-files-preview"
